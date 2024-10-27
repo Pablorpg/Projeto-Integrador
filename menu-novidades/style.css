@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Exo 2", sans-serif;
+}
+
+body{
+    background-color: #131D2B;
+    margin: 0;
+    position: relative;
+}
+
+.logo{
+    margin-left: 565px;
+    color: white;
+}
+
+.nav-bar{
+    height: 54px;
+    width: 1279px;
+    background-color: #22334B;
+    display: flex;
+    align-items: center;
+}
+
+.dividir-1{
+    position: relative;
+    left: 330px;
+}
+
+.dividir-2{
+    position: relative;
+    left: 200px;
+}
+
+.nome{
+    margin-left: 200px;
+    color: white;
+}
+
+.usuario{
+    margin-left: 30px;
+}
+
+.aba{
+    position: relative;
+    top: 18px;
+    height: 20px;
+}
+
+.linha{
+    margin-top: 85.5px;
+    width: 1278px;
+}
+
+.menu{
+    height: 570px;
+    width: 300px;
+    background-color: #22334B;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.tres-pontos{
+    margin-top: 13.5px;
+    margin-right: 250px;
+}
+
+.aviso{
+    margin-top: 7.5px;
+    margin-right: 230px;
+}
+
+.calendario{
+    margin-top: 1.5px;
+    margin-right: 230px;
+}
+
+.desempenho{
+    margin-right: 230px;
+    margin-top: -4.5px;
+}
+
+.botao-1{
+    height: 50px;
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    cursor: pointer;
+    padding-left: 23px;
+}
+
+.botao-2{
+    height: 44px;
+    width: 300px;
+    background-color: #3B71A3;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    cursor: pointer; 
+}
+
+.botao-3{
+    height: 38px;
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    cursor: pointer; 
+}
+
+.botao-4{
+    height: 32px;
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 383px; 
+}
+
+.p1-menu{
+    position: relative;
+    right: 66px;
+    font-size: 16px;
+    bottom: 43.5px;
+}
+.p2-novidades{
+    position: relative;
+    right: 40px;
+    font-size: 16px;
+    bottom: 40px;
+}
+
+.p3-informacoes{
+    position: relative;
+    font-size: 16px;
+    bottom: 40px;
+}
+
+.p4-desempenho{
+    position: relative;
+    right: 30px;
+    font-size: 16px;
+    bottom: 40px;
+}
+
+a{
+    height: 50px;
+}
+
+.borrao {
+    width: 1279px;
+    height: 667px;
+    position: absolute;
+    top: 53px; 
+    left: 0;
+    background-color: rgba(217, 217, 217, 0.5); 
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
