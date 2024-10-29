@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #131D2B;
+    margin: 0;
+}
+
+.logo{
+    font-family: "Exo 2", sans-serif;
+    margin-left: 565px;
+    color: white;
+}
+
+.nav-bar{
+    height: 54px;
+    width: 1279px;
+    background-color: #22334B;
+    display: flex;
+    align-items: center;
+}
+
+.dividir-1{
+    position: relative;
+    left: 330px;
+}
+
+.dividir-2{
+    position: relative;
+    left: 200px;
+}
+
+.nome{
+    margin-left: 200px;
+    font-family: "Exo 2", sans-serif;
+    color: white;
+}
+
+.usuario{
+    margin-left: 30px;
+}
+
+.aba{
+    position: relative;
+    top: 5px;
+    height: 20px;
+}
+
+.menu-aba{
+    height: 80px;
+    width: 130px;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 45px;
+    left: 1120px;
+    text-decoration: none;
+    border-radius: 7px;
+    border: 1.5px solid black;
+
+}
+
+.linha-menu{
+    height: 1px;
+    background-color: black;
+    border-color: black;
+}
+
+.texto-aba{
+    font-size: 12px;
+    margin-left: 10px;
+    font-family: "Exo 2", sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+.menu-aba a {
+    text-decoration: none
+}
+
+.texto-aba:hover{
+    color: #3B71A3;
+}
+.linha{
+    margin-top: 85.5px;
+    width: 1278px;
+}
+
+.menu{
+    height: 570px;
+    width: 71px;
+    background-color: #22334B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tres-pontos{
+    margin-top: 3px;
+}
+
+.botao-1{
+    height: 44px;
+    width: 71px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    cursor: pointer; 
+}
+
+.botao-2{
+    height: 44px;
+    width: 71px;
+    background-color: #3B71A3;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    cursor: pointer; 
+}
+
+.botao-3{
+    height: 44px;
+    width: 71px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    cursor: pointer; 
+}
+
+.botao-4{
+    height: 44px;
+    width: 71px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 383px; 
+}
