@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +7,26 @@
     <link rel="stylesheet" href="style.css">
     <title>EduConecta</title>
 </head>
-
 <body>
-
     <div class="logo">EduConecta</div>
-
     <div class="container">
-        <input type="email"  class="retangulo-usuario" placeholder="Usuário:">
+        <form id="loginForm">
+            <input type="text" class="retangulo-usuario" placeholder="Usuário:">
+            <h2 class="mensagem-1"></h2>
 
             <input type="password" class="retangulo-senha" placeholder="Senha:">
-        
-        <a href="../novidades/index.html" class="link-entrar">
-            <button class="botao-login">Entrar</button>
-        </a>
+            <h3 class="mensagem-2"></h3>
 
+            <button type="submit" class="botao-login">Entrar</button>
+        </form>
     </div>
 
     <div class="esqueceu">
-        <a href="../esqueceu-senha/index.html">
+        <a href="#">
             <p class="esq-senha">Esqueceu sua senha?</p>
         </a>
     </div>
 
+    <script src="script.js"></script>
 </body>
-
 </html>

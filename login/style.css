@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    font-family: "Exo 2", sans-serif;
+}
+
 .container{
     width: 600px;
     height: 400px;
@@ -35,6 +39,8 @@ input{
     color: #294f84;
     margin-bottom: 20px;
     font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 ::placeholder{
@@ -53,6 +59,7 @@ input{
     font-size: 1.3rem;
     color: #294f84;
     margin-bottom: 40px;
+    margin-bottom: 0;
 }
 
 
@@ -69,6 +76,7 @@ input{
     font-weight: 550;
     cursor: pointer;
     margin-bottom: 30px;
+    margin-left: 161px;
 }
 
 .esq-senha{
@@ -89,3 +97,21 @@ input{
     width: 110px;
     border-radius: 20px;
 }
+
+.mensagem-1{
+    font-size: 16px;
+    color: red;
+    min-height: 20px; 
+    margin-top: -10px;
+    margin-left: 20px;
+    margin-bottom: 20px; 
+}
+
+.mensagem-2 {
+    font-size: 16px;
+    color: red;
+    min-height: 20px;
+    margin-bottom: 20px; 
+    margin-left: 20px;
+}
+
