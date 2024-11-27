@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>EduConecta - CONTA</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="imagens/remove.png" class="dividir-1" alt="">
+
+        <h1 class="logo">EduConecta</h1>
+
+        <img src="imagens/remove.png" class="dividir-2" alt="">
+
+        <p class="nome-responsavel">Nome do responsável completo</p>
+
+    </nav>
+
+    <nav class="menu-lateral">
+
+        <div class="btn-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+
+        <ul>
+            <li class="item-menu">
+                <a href="" class="link-inf">
+                    <span class="icon"><i class="bi bi-calendar"></i></span>
+                    <span class="txt-link">Informações</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="" class="link-desempenho">
+                    <span class="icon"><i class="bi bi-bar-chart-fill"></i></span>
+                    <span class="txt-link">Desempenho</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="" class="link-suporte">
+                    <span class="icon"><i class="bi bi-headset"></i></span>
+                    <span class="txt-link">Suporte</span>
+                </a>
+            </li>
+
+            <li class="item-menu ativo">
+                <a href="" class="link-conta">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt-link">Conta</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="" class="link-sair">
+                    <span class="icon"><i class="bi bi-box-arrow-left"></i></span>
+                    <span class="txt-link">Sair</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="container-um">
+        <p class="p-perfil">Perfil</p>
+        <p class="p-conta">Conta</p>
+        <p class="p-notificacao">Notificação</p>
+        <p class="p-idioma">Idioma</p>
+        <p class="p-ajuda">Ajuda</p>
+    </div>
+
+    <div class="container-dois">
+        <h1 class="txt-dois">Perfil</h1>
+        <p class="txt-p-dois">Foto de Perfil</p>
+
+        <input id="rtg-foto" type="file">
+
+        <h1 class="nome">Nome:</h1>
+        <input id="nome" type="text">
+        <h1 id="msgNome"></h1>
+
+        <h1 class="email">E-mail:</h1>
+        <input id="email" type="text">
+
+        <button id="salvar" class="salvar">Salvar Alterações</button>
+    </div>
+    
+    <div id="loading-screen" style="display: none;">
+        <span class="carregando"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

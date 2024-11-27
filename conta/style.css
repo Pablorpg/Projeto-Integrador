@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Exo 2", sans-serif;
+}
+
+
+body{
+    background-image: url(imagens/fundo-3.png);
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.nav-bar {
+    height: 54px;
+    width: 100%;
+    background-color: #22334B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.logo{
+    font-family: "Exo 2", sans-serif;
+    color: white;
+    margin-left: 100px;
+}
+
+.dividir-1{
+    margin-left: 234px;
+    margin-right: 100px;
+}
+
+.dividir-2{
+    margin-left: 200px;
+}
+
+.nome-responsavel{
+    font-family: "Exo 2", sans-serif;
+    color: white;
+    margin-left: 50px;
+}
+
+nav.menu-lateral{
+    width: 60px;
+    height: 500px;
+    background-color: #22334B;
+    padding: 40px 0  40px 1%;
+    border-top: 2px solid #3B71A3;
+    border-right: 2px solid #3B71A3;
+    border-bottom: 2px solid #3B71A3;
+    border-left: none;
+    z-index: 1;
+    position: relative;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+    transition: .5s;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: #3B71A3;
+}
+
+ul li.item-menu:hover{
+    background-color: #3B71A3;
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+    margin-left: 7px;
+    height: 46px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 60px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 30px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 25px;
+}
+
+.modal-desempenho {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #3B71A3;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+button {
+    background-color: #22334B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f5c8a;
+}
+
+span.carregando{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    display: block;
+    border: 12px solid #294f84;
+    border-top: 12px solid transparent;
+    border-radius: 50%;
+    animation: loading 1s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.container-um{
+    width: 500px;
+    height: 500px;
+    background-color: #51A2B6;
+    position: absolute;
+    top: 100px;
+    left: 220px;
+    border-radius: 20px;
+    display: flex;
+    border: 2px solid white;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 600;
+    padding-left: 20px;
+    color: #000000;
+}
+
+.container-dois{
+    width: 550px;
+    height: 500px;
+    background-color: #466f7a;
+    position: absolute;
+    border: 2px solid white;
+    top: 130px;
+    left: 450px;
+    display: flex;
+    border-radius: 20px;
+    padding-left: 20px;
+    flex-direction: column;
+}
+
+.txt-p-dois{
+    color: white;
+}
+
+.txt-dois{
+    color: white;
+}
+
+.p-perfil{
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: 70px;
+    color: white;
+}
+
+.p-conta{
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.p-notificacao{
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.p-idioma{
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.p-ajuda{
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.p-perfil:hover{
+    color: white;
+}
+
+.p-conta:hover{
+    color: white;
+}
+
+.p-notificacao:hover{
+    color: white;
+}
+
+.p-idioma:hover{
+    color: white;
+}
+
+.p-ajuda:hover{
+    color: white;
+}
+
+.rtg-foto{
+    color: red;
+}
+
+#rtg-foto:hover{
+    background-color: #4d607a;
+    width: 300px;
+    cursor: pointer;
+}
+
+.nome{
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    left: -50px;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: white;
+}
+
+#nome{
+    width: 450px;
+    height: 30px;
+}
+
+.email{
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 10px;
+    color: white;
+}
+
+#email{
+    width: 450px;
+    height: 30px;
+}
+
+.salvar{
+    width: 200px;
+    height: 50px;
+    background-color: #3B71A3;
+    margin-top: 80px;
+}
+
+@media (max-width: 750px) {
+
+    .nav-bar{
+        padding: 0;
+    }
+
+    .logo{
+        margin-left: 0;
+        margin-right: 200px;
+
+    }
+
+    .dividir-1{
+        display: none;
+    }
+
+    .dividir-2{
+        display: none;
+    }
+
+    .container-um{
+        width: 300px;
+        height: 300px;
+        left: 150px;
+    }
+
+    .container-dois{
+        width: 300px;
+        height: 300px;
+        left: 290px;
+        padding-bottom: 10px;
+    }
+
+    .txt-dois{
+        font-size: 20px;
+    }
+
+    .txt-p-dois{
+        font-size: 12px;
+    }
+
+    #rtg-foto{
+        font-size: 10px;
+        color: rgb(99, 13, 13);
+    }
+
+    #nome{
+        width: 270px;
+    }
+
+    #email{
+        width: 270px;
+    }
+
+    .salvar{
+        margin-top: 30px;
+        width: 150px;
+        margin-top: 10px;
+    }
+
+}
+
+@media (min-width: 315px) and (max-width: 520px){
+    .container-um{
+        left: 80px;
+    }
+
+    .container-dois{
+        left: 200px;
+        width: 280px;
+    }
+
+    #msgNome{
+        margin-bottom: 0px;
+    }
+
+    #nome, #email{
+        width: 250px;
+    }
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Exo 2", sans-serif;
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    background-color: #162437;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    background-image: url(imagens/fundo-3.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+input{
+    padding-left: 20px;
+}
+
+.retangulo-usuario{
+    width: 500px;
+    height: 90px;
+    background-color: #22334b;
+    border-radius: 20px;
+    border: 0;
+    font-size: 1.3rem;
+    color: #294f84;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+::placeholder{
+    color: #294f84;
+    margin-left: 20px;
+}
+
+.botao-enviar{
+    width: 200px;
+    height: 70px;
+    background-color: #2b2b2b;
+    border-radius: 50px;
+    border: 2;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 550;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.reenviar{
+    text-decoration: underline;
+    color: #5385cc;
+}
+
+.logo{
+    
+    margin-bottom: 30px;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.log{
+    width: 110px;
+    border-radius: 20px;
+}
+
+.informar{
+    margin-top: 0;
+    position: relative;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 50;
+    top: 20px;
+}
+
+.link-enviar{
+    margin-top: 50px;
+}
+
+.mensagem{
+    font-size: 16px;
+    color: red;
+    min-height: 20px; 
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+span.carregando{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    display: block;
+    border: 12px solid #294f84;
+    border-top: 12px solid transparent;
+    border-radius: 50%;
+    animation: loading 1s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#loading-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.botao-voltar{
+    height: 40px;
+    width: 90px;
+    color: white;
+    position: absolute;
+    font-weight: 600;
+    bottom: 430px;
+    left: 950px;
+    border-radius: 20px;
+    background-color: #162437;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.texto-voltar{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/logo.png"type="image/x-icon">
+    <title>EduConecta - LOGIN</title>
+</head>
+
+<body>
+    <div class="logo">EduConecta</div>
+    <div class="container">
+        <form id="loginForm" action="informacoes/index.html" method="post">
+            <input type="text" class="retangulo-usuario" placeholder="Usuário:">
+            <h2 class="mensagem-1"></h2>
+        
+            <input type="password" class="retangulo-senha" placeholder="Senha:">
+            <h3 class="mensagem-2"></h3>
+        
+            <button type="submit" class="botao-login">Entrar</button>
+        </form>
+        
+    </div>
+
+    <div class="esqueceu">
+        <a href="esqueceu-senha/index.html"><p class="esq-senha">Esqueceu sua senha?</p></a>
+        
+    </div>
+
+    <div id="loading-screen" style="display: none;">
+        <span class="carregando"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

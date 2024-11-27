@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="imagens/logo.png"type="image/x-icon">
+    <title>EduConecta - SUPORTE</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="imagens/remove.png" class="dividir-1" alt="">
+
+        <h1 class="logo">EduConecta</h1>
+
+        <img src="imagens/remove.png" class="dividir-2" alt="">
+
+        <p class="nome">Nome do responsável completo</p>
+
+    </nav>
+
+    <nav class="menu-lateral">
+
+        <div class="btn-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+
+        <ul>
+            <li class="item-menu">
+                <a href="" class="link-inf">
+                    <span class="icon"><i class="bi bi-calendar"></i></span>
+                    <span class="txt-link">Informações</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="" class="link-desempenho">
+                    <span class="icon"><i class="bi bi-bar-chart-fill"></i></span>
+                    <span class="txt-link">Desempenho</span>
+                </a>
+            </li>
+
+            <li class="item-menu ativo">
+                <a href="" class="link-suporte">
+                    <span class="icon"><i class="bi bi-headset"></i></span>
+                    <span class="txt-link">Suporte</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="" class="link-conta">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt-link">Conta</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="" class="link-sair">
+                    <span class="icon"><i class="bi bi-box-arrow-left"></i></span>
+                    <span class="txt-link">Sair</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="container-meio">
+
+        <div class="container-mensagem">
+            <span class="icon-mensagem">
+                <i class="bi bi-person-circle"></i>
+            </span>
+            <p class="direcao">Direção Escolar</p>
+            <p class="recado">Mande uma mensagem a secretaria da escola, você será respondido(a) em 24 horas uteis.</p>
+            <p class="dia">seg. 17:26</p>
+
+            <div class="mensagem-1">Olá, direção.</div>
+            <div class="mensagem-2">Em que dia vão começar as provas do ensino fundamental?</div>
+
+            <div>
+                <input id="digitar" type="text" placeholder="Mensagem...">
+                <i id="send" class="bi bi-send"></i>
+            </div>
+                
+        </div>
+    </div>
+    
+    <div id="loading-screen" style="display: none;">
+        <span class="carregando"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Exo 2", sans-serif;
+}
+
+body{
+    background-color: #131D2B;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.nav-bar {
+    height: 54px;
+    width: 100%;
+    background-color: #22334B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.logo{
+    font-family: "Exo 2", sans-serif;
+    color: white;
+    margin-left: 100px;
+}
+
+.dividir-1{
+    margin-left: 234px;
+    margin-right: 100px;
+}
+
+.dividir-2{
+    margin-left: 200px;
+}
+
+.nome{
+    font-family: "Exo 2", sans-serif;
+    color: white;
+    margin-left: 50px;
+}
+
+nav.menu-lateral{
+    width: 60px;
+    height: 500px;
+    background-color: #22334B;
+    padding: 40px 0  40px 1%;
+    border-top: 2px solid #3B71A3;
+    border-right: 2px solid #3B71A3;
+    border-bottom: 2px solid #3B71A3;
+    border-left: none;
+    z-index: 1;
+    position: relative;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+    transition: .5s;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: #3B71A3;
+}
+
+ul li.item-menu:hover{
+    background-color: #3B71A3;
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+    margin-left: 7px;
+    height: 46px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 60px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 30px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 25px;
+}
+
+.modal-desempenho {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #3B71A3;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+button {
+    background-color: #22334B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f5c8a;
+}
+
+span.carregando{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    display: block;
+    border: 12px solid #294f84;
+    border-top: 12px solid transparent;
+    border-radius: 50%;
+    animation: loading 1s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.p-container-meio{
+    height: 500px;
+    width: 470px;
+    background-color: #22334B;
+    position: absolute;
+    top: 110px;
+    left: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circulo {
+    background: conic-gradient(#64D064 300deg, white 0deg);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.circulo::before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: #22334B;
+    border-radius: 50%;
+}
+
+.valor{
+    color: white;
+    z-index: 1;
+    font-weight: 900;
+}
+
+.txt-p-container{
+    width: 250px;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.s-container-meio{
+    height: 500px;
+    width: 470px;
+    background-color: #5A7792;
+    position: absolute;
+    top: 60px;
+    left: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rtg-faltas{
+    height: 80px;
+    width: 250px;
+    background-color: #ff575763;
+    border-radius: 20px;
+    margin-left: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.rtg-atitudes{
+    height: 80px;
+    width: 250px;
+    background-color: #ffb11f30;
+    border-radius: 20px;
+    margin-left: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.rtg-habilidades{
+    height: 80px;
+    width: 250px;
+    background-color: #00bd9132;
+    border-radius: 20px;
+    margin-left: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.rtg-conhecimento{
+    height: 80px;
+    width: 250px;
+    background-color: #1124d428;
+    border-radius: 20px;
+    margin-left: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    color: white;
+}
+
+.int-faltas{
+    position: absolute;
+    left: 370px;
+    bottom: 420px;
+    color: rgb(226, 207, 230);
+}
+
+
+.int-atitudes{
+    position: absolute;
+    left: 370px;
+    bottom: 315px;
+    color: rgb(226, 207, 230);
+}
+
+
+.int-habilidades{
+    position: absolute;
+    left: 370px;
+    bottom: 210px;
+    color: rgb(226, 207, 230);
+}
+
+
+.int-conhecimento{
+    position: absolute;
+    left: 370px;
+    bottom: 105px;
+    color: rgb(226, 207, 230);
+}
+
+.int-faltas {
+    color: rgb(226, 207, 230);
+    cursor: pointer;
+}
+
+.mensagem-faltas{
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+    color: #ff8787;
+}
+
+.int-faltas:hover .mensagem-faltas{
+    visibility: visible;
+    opacity: 1;
+}
+
+.int-atitudes {
+    color: rgb(226, 207, 230);
+    cursor: pointer;
+}
+
+.mensagem-atitudes{
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: #ffce74;
+    font-size: 12px;
+}
+
+.int-atitudes:hover .mensagem-atitudes {
+    visibility: visible;
+    opacity: 1;
+}
+
+.int-habilidades{
+    color: rgb(226, 207, 230);
+    cursor: pointer;
+}
+
+.mensagem-habilidades{
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: #3cc9a8;
+    font-size: 12px;
+}
+
+.int-habilidades:hover .mensagem-habilidades{
+    visibility: visible;
+    opacity: 1;
+}
+
+.int-conhecimento {
+    color: rgb(226, 207, 230);
+    cursor: pointer;
+}
+
+.mensagem-conhecimento{
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: #5563de;
+    font-size: 12px;
+}
+
+.int-conhecimento:hover .mensagem-conhecimento{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* RESPOSIVO - TABLETS*/
+@media (max-width: 750px) {
+
+    .nav-bar{
+        padding: 0;
+    }
+
+    .logo{
+        margin-left: 0px;
+        margin-right: 250px;
+
+    }
+
+    .dividir-1{
+        display: none;
+    }
+
+    .dividir-2{
+        display: none;
+    }
+
+    .nome{
+        margin-left: 0px;
+    }
+
+    .circulo{
+        width: 110px;
+        height: 110px;
+        margin-top: 10px;
+    }
+    .circulo::before{
+        width: 70px;
+        height: 70px
+    }
+
+    .valor{
+        font-size: 16px;
+    }
+
+    .txt-p-container{
+        font-size: 14px;
+        width: 150px;
+        margin-top: 50px;
+    }
+
+    .p-container-meio{
+        width: 250px;
+        height: 350px;
+        left: 150px;
+        top: 130px;
+    }
+
+    .s-container-meio{
+        width: 250px;
+        height: 350px;
+        left: 350px;
+        top: 90px;
+    }
+
+    .rtg-faltas{
+        width: 150px;
+        margin-top: 0;
+    }
+
+    .txt-faltas{
+        font-size: 12px;
+    }
+
+    .nmr-faltas{
+        font-size: 12px;
+    }
+
+    .int-faltas{
+        bottom: 306px;
+        left: 213px;
+        font-size: 13px;
+    }
+
+    .rtg-atitudes{
+        width: 150px;
+    }
+
+    .txt-atitudes{
+        font-size: 12px;
+    }
+
+    .nmr-atitudes{
+        font-size: 12px;
+    }
+
+    .int-atitudes{
+        bottom: 224px;
+        left: 213px;
+        font-size: 13px;
+    }
+
+    .rtg-habilidades{
+        width: 150px;
+    }
+
+    .txt-habilidades{
+        font-size: 12px;
+    }
+
+    .nmr-habilidades{
+        font-size: 12px;
+    }
+
+    .int-habilidades{
+        bottom: 140px;
+        left: 213px;
+        font-size: 13px;
+    }
+
+    .rtg-conhecimento{
+        width: 150px;
+    }
+
+    .txt-conhecimento{
+        font-size: 12px;
+    }
+
+    .nmr-conhecimento{
+        font-size: 12px;
+    }
+
+    .int-conhecimento{
+        bottom: 57px;
+        left: 213px;
+        font-size: 13px;
+    }
+}
+
+
+@media (min-width: 315px) and (max-width: 520px){
+    .p-container-meio{
+        left: 70px;
+        width: 230px;
+    }
+
+    .s-container-meio{
+        left: 240px;
+    }
+}

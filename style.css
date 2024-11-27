@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Exo 2", sans-serif;
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    background-color: #162437;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    background-image: url(fundo-3.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+input{
+    padding-left: 20px;
+}
+
+.retangulo-usuario{
+    width: 500px;
+    height: 90px;
+    background-color: #22334b;
+    border-radius: 20px;
+    border: 0;
+    font-size: 1.3rem;
+    color: #294f84;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+::placeholder{
+    color: #294f84;
+    margin-left: 20px;
+}
+
+.retangulo-senha{
+    width: 500px;
+    height: 90px;
+    background-color: #22334b;
+    border-radius: 20px;
+    border: 0;
+    font-weight: 600;
+    color: white;
+    font-size: 1.3rem;
+    color: #294f84;
+    margin-bottom: 40px;
+    margin-bottom: 0;
+}
+
+
+.botao-login{
+    width: 200px;
+    height: 70px;
+    background-color: #2b2b2b;
+    border-radius: 50px;
+    border: 2;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 550;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 161px;
+}
+
+.esq-senha{
+    text-decoration: underline;
+    color: #5385cc;
+    cursor: pointer;
+}
+
+.logo{
+    
+    margin-bottom: 30px;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.log{
+    width: 110px;
+    border-radius: 20px;
+}
+
+.mensagem-1{
+    font-size: 16px;
+    color: red;
+    min-height: 20px; 
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-bottom: 10px; 
+}
+
+.mensagem-2 {
+    font-size: 16px;
+    color: red;
+    min-height: 20px;
+    margin-bottom: 10px; 
+    margin-left: 10px;
+}
+
+
+span.carregando{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    display: block;
+    border: 12px solid #294f84;
+    border-top: 12px solid transparent;
+    border-radius: 50%;
+    animation: loading 1s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    /* estilos específicos para telas largas */
+ }
+ 
+ /* Desktop padrão */
+ @media (min-width: 992px) and (max-width: 1199px) {
+    /* estilos específicos para desktops */
+ }
+ 
+ /* Tablets */
+ @media (min-width: 768px) and (max-width: 991px) {
+    .container{
+        width: 550px;
+        height: 950px;
+    }
+    .retangulo-usuario{
+        width: 450px;
+        margin-left: 20px;
+    }
+    .retangulo-senha{
+        width: 450px;
+        margin-left: 20px;
+    }
+    .botao-login{
+        width: 200px;
+        margin-right: 150px;
+    }
+ }
+ 
+ /* Smartphones */
+ @media (max-width: 767px) {
+    .container{
+        width: 350px;
+    }
+    .retangulo-usuario{
+        width: 220px;
+        height: 80px;
+        margin-left: 100px;
+    }
+    .retangulo-senha{
+        width: 220px;
+        height: 80px;
+        margin-left: 100px;
+    }
+    .botao-login{
+        width: 150px;
+        margin-right: 150px;
+        
+    }
+    .mensagem-1{
+        margin-left: 80px;
+    }
+    .mensagem-2{
+        margin-left: 80px;
+    }
+ }
+
+ @media (min-width: 315px) and (max-width: 520px){
+    .container{
+        width: 270px;
+    }
+    .retangulo-usuario{
+        width: 140px;
+        height: 70px;
+        margin-left: 110px;
+    }
+    .retangulo-senha{
+        width: 140px;
+        height: 70px;
+        margin-left: 110px;
+    }
+    .botao-login{
+        width: 100px;
+        height: 40px;
+        margin-right: 140px;
+        
+    }
+ }
